@@ -1,0 +1,32 @@
+.container{
+    width: 800px;
+    position: relative;
+    margin: 150px auto;
+    border: 10px solid rebeccapurple;
+    border-radius: 20px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.container:hover{
+    background-color: cornflowerblue;
+}
+
+ 
+  #moving-element {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
